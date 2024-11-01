@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+h1 {
+    border-bottom: 2px solid #333;
+}
+
+.timeline ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f1f1
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007BFF; /* Bootstrap Blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.service-container, .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-tile, .project-tile {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    flex: 0 0 calc(50% - 20px); /* 2 tiles per row */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-tile:hover, .project-tile:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .service-tile, .project-tile {
+        flex: 0 0 100%; /* 1 tile per row on smaller screens */
+    }
+}
